@@ -34,7 +34,7 @@
     <div class="form-group input-group-lg">
       <input type="text" class="form-control" placeholder=" Username" name="username" required>
     </div>
-         <div class="g-recaptcha" data-sitekey="6LddwDIUAAAAAOMf7PT0m8UubvEh7_6HPzXCdoWm"></div>
+         <div class="g-recaptcha" data-sitekey="your_api_key"></div>
     <button type="submit" class="btn " style="margin-left:45%;margin-top:10px;background-color:green;border-radius:50px;color:white;font-size:25px">Sign Up</button>
   </form>
 </div>
