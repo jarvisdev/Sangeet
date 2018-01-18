@@ -39,7 +39,7 @@ $art=$_POST['art'];
 		<script>
     
     $(document).ready(function(){
-	      $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"track.getinfo",artist:"<?php echo $art ?>" ,track:"<?php echo $name ?>",api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+	      $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"track.getinfo",artist:"<?php echo $art ?>" ,track:"<?php echo $name ?>",api_key:"your_key",format:"json"},
     function(responseText){
              
             $("<p></p>").html(responseText.track.name+"</br><pre><b>Listeners</b></pre>   "+responseText.track.listeners+"</br><pre><b>Composed By</b></pre>"+responseText.track.artist.name).css({"color":"white","float":"left","margin-top":"50px","margin-right":"900px","font-size":"50px"}).addClass("").appendTo("#artistabout");
