@@ -104,7 +104,7 @@ session_start();
 </div>
 <script>
 $(document).ready(function(){
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"chart.gettopartists",api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"chart.gettopartists",api_key:"your_key",format:"json"},
     function(responseText){
             $.each(responseText, function(i, field){
 
@@ -174,7 +174,7 @@ $(document).ready(function(){
 </div>
 <script>
 $(document).ready(function(){
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"chart.gettoptracks",api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"chart.gettoptracks",api_key:"your_key",format:"json"},
     function(responseText){
             $.each(responseText, function(i, field){
 
@@ -206,7 +206,7 @@ $(document).ready(function(){
 </div>
 <script>
 $(document).ready(function(){
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"chart.gettoptags",api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"chart.gettoptags",api_key:"your_key",format:"json"},
     function(responseText){
             $.each(responseText, function(i, field){
                      $("#ohh").css({"margin-top":"10px","margin-bottom":"10px","position":"relative"}).addClass("col-lg-12 col-sm-3 col-xs-2 col-md-6").appendTo("#now");
@@ -258,7 +258,7 @@ i++; $("#rest1").css("display","block");
                          $("#just").css("display","none");
                           $("#fourth").css("display","none");
                       
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.search",artist:$(this).val() ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.search",artist:$(this).val() ,api_key:"your_key",format:"json"},
     function(responseText){
                       
      $.each(responseText,function(i,fields){
@@ -325,7 +325,7 @@ i++;
      $("#another").css("display","none");
                          $("#just").css("display","none");
                           $("#fourth").css("display","none");
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"track.search",track:$(this).val() ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"track.search",track:$(this).val() ,api_key:"your_key",format:"json"},
     function(responseText){
                    
                       
@@ -394,7 +394,7 @@ i++;
      $("#another").css("display","none");
                          $("#just").css("display","none");
                           $("#fourth").css("display","none");
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"album.search",album:$(this).val() ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"album.search",album:$(this).val() ,api_key:"your_key",format:"json"},
     function(responseText){
                    
                       
