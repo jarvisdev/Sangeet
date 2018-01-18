@@ -110,7 +110,7 @@ function tplawesome(template, data) {
 
   function init()
   {
-      gapi.client.setApiKey("AIzaSyAxbBrvtR3yi-nvgBoffImP4q83_sDbmsc");
+      gapi.client.setApiKey("your_key");
       gapi.client.load("youtube","v3",function(){
                //api is ready now
       });
