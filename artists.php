@@ -73,7 +73,7 @@ function back(){
 $(document).ready(function(){
 	          let ddd=`<a class="btn btn-default" id="follow2" style="color:white;background:url(userbg.jpg);width:100%;">follow</a>`;
                   $("#follow").html(ddd);
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.getinfo",artist:"<?php echo $name ?>" ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.getinfo",artist:"<?php echo $name ?>" ,api_key:"your_key",format:"json"},
     function(responseText){
             $("<img>").attr("src",responseText.artist.image[3]["#text"]).css({"width":"200px","height":"200px","margin-right":"0px","margin-top":"40px","float":"left"}).addClass(" img-responsive col-md-8").appendTo("#artistabout");
             $("<p></p>").attr("fol",responseText.artist.name).html(responseText.artist.name+"</br><pre><b>Listeners</b></pre>   "+responseText.artist.stats.listeners).css({"color":"white","float":"left","margin-top":"50px","font-size":"50px","font-family":"Quicksand,cursive","font-style":"bold"}).addClass("col-md-2 col-sm-2 set").appendTo("#artistabout");
@@ -104,7 +104,7 @@ $(document).ready(function(){
       
       
 
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.getinfo",artist:"<?php echo $name ?>" ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.getinfo",artist:"<?php echo $name ?>" ,api_key:"your_key",format:"json"},
     function(responseText){
        $("#idd").css("display","block");
             $("<h1></h1>").css({"color":"white","font-family":"Quicksand,cursive","font-style":"bold"}).html(responseText.artist.name).appendTo("#idd");
@@ -130,7 +130,7 @@ $(document).ready(function(){
      $("#rest").css("display","none");
       $("#idd").css("display","none");
       $("#real").css("display","block");
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.gettopalbums",artist:"<?php echo $name ?>" ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.gettopalbums",artist:"<?php echo $name ?>" ,api_key:"your_key",format:"json"},
     function(responseText){
     	$.each(responseText,function(i,fields){
     		
@@ -159,7 +159,7 @@ $(document).ready(function(){
      $("#real").css("display","none");
       $("#idd").css("display","none");
        $("#rest").css("display","block");
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.gettoptracks",artist:"<?php echo $name ?>" ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"artist.gettoptracks",artist:"<?php echo $name ?>" ,api_key:"your_key",format:"json"},
     function(responseText){
       $.each(responseText,function(i,fields){
         var lis=document.createElement("ol");
@@ -325,7 +325,7 @@ function tplawesome(template, data) {
 
  function init()
   {
-      gapi.client.setApiKey("AIzaSyAxbBrvtR3yi-nvgBoffImP4q83_sDbmsc");
+      gapi.client.setApiKey("your_key");
       gapi.client.load("youtube","v3",function(){
                //api is ready now
       });
