@@ -50,7 +50,7 @@ $art=$_POST['art'];
 //alert("hii");
 $(document).ready(function(){
          
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"album.getinfo",album:"<?php echo $art ?>",artist:"<?php echo $name ?>" ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"album.getinfo",album:"<?php echo $art ?>",artist:"<?php echo $name ?>" ,api_key:"your_key",format:"json"},
     function(responseText){
       //alert("hello");
     	$.each(responseText,function(i,fields){
@@ -222,7 +222,7 @@ function tplawesome(template, data) {
 
   function init()
   {
-      gapi.client.setApiKey("AIzaSyAxbBrvtR3yi-nvgBoffImP4q83_sDbmsc");
+      gapi.client.setApiKey("your_key");
       gapi.client.load("youtube","v3",function(){
                //api is ready now
       });
