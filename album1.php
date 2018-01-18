@@ -46,7 +46,7 @@ $name=$_POST['name'];
    	<script>
 $(document).ready(function(){
 
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"tag.getinfo",tag:"<?php echo $name ?>" ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"tag.getinfo",tag:"<?php echo $name ?>" ,api_key:"your_key",format:"json"},
     function(responseText){
     	$.each(responseText,function(i,fields){
         $("#name").text(fields.name);
@@ -60,7 +60,7 @@ console.log("ff");
 </script>
 <script>
 $(document).ready(function(){
-        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"tag.gettoptracks",tag:"<?php echo $name ?>" ,api_key:"60be7384c192e38ebcc5902590d78c86",format:"json"},
+        $.getJSON("http://ws.audioscrobbler.com/2.0/",{method:"tag.gettoptracks",tag:"<?php echo $name ?>" ,api_key:"your_key",format:"json"},
     function(responseText){
       $.each(responseText,function(i,fields){
         for(var j=0;j<100;j++){
@@ -234,7 +234,7 @@ function tplawesome(template, data) {
 
   function init()
   {
-      gapi.client.setApiKey("AIzaSyAxbBrvtR3yi-nvgBoffImP4q83_sDbmsc");
+      gapi.client.setApiKey("your_key");
       gapi.client.load("youtube","v3",function(){
                //api is ready now
       });
