@@ -24,5 +24,5 @@ Languages and Frameworks used:
 * **AJAX**
 
 Developers:
-JugtaRam
-Milan Bavishi
+* **Jugta Ram**
+* **Milan Bavishi**
