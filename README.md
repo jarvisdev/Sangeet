@@ -2,7 +2,7 @@
 ### A Music streaming WebSite
 
 A simple Music Streaming Website with some good features like 
-* **Weekly Top Songs**
+* **Weekly Top Songs Chartbusters**
 * **Weekly Top Artists**
 * **Top Geners**
 * **Saving Liked Songs**
@@ -22,3 +22,7 @@ Languages and Frameworks used:
 * **JavaScript**
 * **JQuery**
 * **AJAX**
+
+Developers:
+JugtaRam
+Milan Bavishi
