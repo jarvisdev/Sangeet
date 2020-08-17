@@ -23,6 +23,13 @@ Languages and Frameworks used:
 * **JQuery**
 * **AJAX**
 
+### How to run this project
+* Install Xampp(for windows)/lampp(for ubuntu) 
+* Run Apache, Mysql server from xampp GUI menu or for linux run this command: `sudo /opt/lampp/lampp start` provided lampp is installed in /opt
+* Download/Clone this repo and put whole project in `/opt/lampp/htdocs` or for windows find xampp folder in C:/ and in there you can find htdocs folder
+* hit `localhost/folder_name_of_project` in the browser
+* get last.fm API key and Youtube API key and find `your_key` word in project and replace the keys accordingly.
+
 Developers:
 * **Jugta Ram**
 * **Milan Bavishi**
